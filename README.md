@@ -2,7 +2,7 @@
 Resources for Google Cloud workshop (TFUG Prayagraj) on using the Vision API.
 
 Request body example:
-`echo '
+echo '
 {
   "requests": [
       {
@@ -20,7 +20,7 @@ Request body example:
       }
   ]
 }
-' > request.json`
+' > request.json
 
 Hit Vision API request using curl.
 `curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}`
