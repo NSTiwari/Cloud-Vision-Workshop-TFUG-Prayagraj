@@ -1,0 +1,19 @@
+echo '
+{
+  "requests": [
+      {
+        "image": {
+          "source": {
+              "gcsImageUri": "gs://YOUR_BUCKET_NAME/YOUR_IMAGE_NAME"
+          }
+        },
+        "features": [
+          {
+            "type": "LABEL_DETECTION",
+            "maxResults": 5
+          }
+        ]
+      }
+  ]
+}
+' > request.json
